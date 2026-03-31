@@ -87,8 +87,8 @@ sql_queries = {
         SELECT u.fullname, u.email, COUNT(t.user_id) AS number_tasks
         FROM users AS u
         LEFT JOIN tasks AS t ON t.user_id = u.id
-        GROUP BY t.user_id
-		ORDER BY number_tasks DESC;
+        GROUP BY u.id
+	ORDER BY number_tasks DESC;
     """,
 }
 

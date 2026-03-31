@@ -70,7 +70,4 @@ def insert_data_to_db(users, status, tasks) -> None:
 
 if __name__ == "__main__":
     users, status, tasks = prepare_data(NUMBER_USERS, NUMBER_TASKS)
-    # print("users: ", users)
-    # print("status: ", status)
-    # print("tasks: ", tasks)
     insert_data_to_db(users, status, tasks)

@@ -27,8 +27,8 @@ def prepare_data(numbers_users, number_tasks) -> tuple:
             (
                 fake_data.text(max_nb_chars=15),
                 fake_data.text(max_nb_chars=40),
-                randint(1, NUMBER_STATUS),
-                randint(1, NUMBER_USERS),
+                randint(1, number_tasks),
+                randint(1, numbers_users),
             )
         )
 
